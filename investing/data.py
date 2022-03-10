@@ -23,7 +23,7 @@ class InvestingDailyReader:
 
         url = 'https://kr.investing.com/search/service/searchTopBar'
         headers = {
-            'User-Agent':'Mozilla',
+            'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:98.0) Gecko/20100101 Firefox/98.0',
             'X-Requested-With':'XMLHttpRequest',
         }
         r = requests.post(url, data={'search_text': symbol}, headers=headers)
@@ -75,7 +75,7 @@ class InvestingDailyReader:
         }
 
         headers = {
-            'User-Agent':'Mozilla',
+            'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:98.0) Gecko/20100101 Firefox/98.0',
             'X-Requested-With':'XMLHttpRequest',
         }
 
